@@ -1,0 +1,93 @@
+.float-container {
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.float-child {
+    width: 45%;
+    float: left;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #7e9c90;
+    margin: 10px;
+}
+
+.basic_para, .basic_list {
+    line-height: 2;
+}
+
+.short_hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    color: #333;
+    background-color: #333;
+}
+
+.masthead {
+    padding-top: 1em;
+    text-align: center;
+    color: black;
+}
+
+.basic_body {
+    background-color:#b86b78; 
+}
+
+.tile_l {
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    width: 45%;
+    float: left;
+}
+
+.tile_r {
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 20px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    width: 45%;
+    float: right;
+}
+
+.tile{
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 20px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+div.tableau-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
