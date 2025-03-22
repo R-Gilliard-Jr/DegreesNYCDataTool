@@ -4,65 +4,63 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
-        <div class="header">
-            <img src="https://static.wixstatic.com/media/b46d4c_032fb441999f43a29b9c601d25e2ff97~mv2.png/v1/fill/w_208,h_55,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%23DegreesNYC_RGB.png">
-        </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
             <div class="carousel-inner">
                 <div class= "carousel-item active tile">
                     <h3><strong>Introduction and Instructions</strong></h3>
                     <p class="d-block w-100"> 
                         The graphs throughout this application are intended to display the paths students take
-                        to and through college, beginning in their freshman year of high school. Each of the tabs
-                        contains a bar graph which can be be updated to show students in different 9th grade cohorts,
+                        to and through college, beginning in their freshman year of high school. A series of bar graphs is presented, that
+                         can be be updated to show students in different 9th grade cohorts,
                         of different race/ethnicity, gender, from different Boroughs, and with different education
                         statuses, among other characteristics. The following dropdown menus and sliders appear on one or more
-                        of the tabs:
+                        of the charts:
                         <ul class="basic_list">
                             <li>
-                                Primary Characteristic: Users can select a primary characteristic, 
-                                which will change the rows that appear on the graph.
+                                Student Characteristic: Charts can be explored within student characteristics. 
+                                Changing the value in this dropdown will change the rows that appear on the graph as well as 
+                                the selectable additional characteristics.
                             </li>
                             <li>
-                                Secondary Characteristic: Users can select a secondary characteristic.
-                                Change the options available in the subgroup dropdown menu (discussed below)
-                                and will update the graph to contain only data for the default subgroup.
+                                Additional Characteristic: Where appropriate, users can drilldown by an additional characteristic.
                             </li>
                             <li>
-                                Subgroup: Users can select a subset of the secondary characteristic.
-                                For example, if the secondary characteristic is "Gender", users can
-                                select either "Male" or "Female".
+                                College Enrollment Level: On the charts depicting college-level outcomes, users can select whether to
+                                examine outcomes for students who attended a four year or two year college, two year only, or four year only.
                             </li>
                             <li>
-                                High School Graduation: Users can select the timing of high school graduation:
-                                ever, on-time, or late.
+                                Years Persisted: The persistence chart can be examined by number of years persisted: two or three.
                             </li>
                             <li>
-                                College Enrollment Level: Users can select the college enrollment level of interest:
-                                any, two year, or four year college.
-                            </li>
-                            <li>
-                                Years Persisted: Users can select the number of years of persistence of interest:
-                                two or three.
-                            </li>
-                            <li>
-                                Cohort: Users can adjust the cohort of interest. The years represent
-                                the year that students in the cohort started ninth grade.
+                                9th Grade Cohort: The data is examined within 9th grade cohorts. Years represent
+                                the year that students in that cohort began 9th grade.
                             </li>
                         </ul> 
+                    </p>
+                </div>
+                <div class="carousel-item tile">
+                    <h3><strong>Examining a Cohort</strong></h3>
+                    <p class="basic_para">
+                        We mention it elsewhere, but it is important to keep in mind that all figures in the dashboard are within a 9th Grade Cohort.
+                        To take an example, consider the 2009 cohort. On the specialized high school chart, the cohort year and the outcome year align:
+                        enrollment in a specialized high school would have had to occur in 2009 for a student to be in the 2009 9th grade cohort. As we progress
+                        through the charts, however, the cohort year and the outcome year diverge. A student in the 2009 cohort would have been on-track in 9th
+                        grade in 2010, an on-time high school graduate in 2013, and an on-time college enrolle in 2013 as well. Nevertheless, the 9th Grade Cohort 
+                        slider will always show 2009. As a result, data for a cohort may not be available for all outcomes because the cohort itself may not have
+                        had time to reach that point in the high-school through college trajectory.
                     </p>
                 </div>
                 <div class= "carousel-item tile">
                     <h3><strong>Dos and Don'ts with the Data</strong></h3>
                     <div class="basic_para">
                         The chart(s) throughout this application present aggregated high school data for students who attended school
-                        in the NYCDOE. The data can be broken up along many different dimensions: race/ethnicity, gender,
+                        in the New York City Department of Education (NYCDOE). The data can be broken up along many different dimensions: race/ethnicity, gender,
                         English language learners, individualized education program status, and free/reduced price lunch eligibility. The best
                         data is not without bias, and further bias is added as data is interpreted. Here are some dos and 
                         dont's to consider as you explore the chart(s) on this page.
                         <ul>
-                            <li><strong>Do:</strong> Remember that, though these groups are presented separately here, they are not independent phenomena in reality. 
-                                Students can have more than one of these identities and the consequences of discrimination mean that students experiencing one 
+                            <li><strong>Do:</strong> Remember that, though these groups are presented separately here, they are not independent in reality. 
+                                Students can have more than one of identity and the consequences of discrimination mean that students experiencing one 
                                 form of marginalization are likely to experience others.
                             </li>
                             <li>
@@ -81,15 +79,23 @@
                             <li><strong>Gender</strong> - Student, self-selected gender. Limited to the, binary, male and female.</li>
                             <li><strong>English Language Learner</strong> - Students whose native language is not english and who have been identified as in need of additional support in learning English.</li>
                             <li><strong>Individualized Education Program</strong> - Students with an individualized education program, developed by their school in partnership with the student and their guardian(s).</li>
-                            <li><strong>Free/reduced Price Lunch</strong> - Students who are eligible for free/reduced price lunch.</li>
+                            <li><strong>Free/Reduced Price Lunch</strong> - Students who are eligible for free/reduced price lunch.</li>
                             <li><strong>Borough</strong> - The borough of New York City in which the student attended high school.</li>
-                            <li><strong>Cohort</strong> - 9<sup style="font-size: 10px;">th</sup> grade cohort. The year shown represents the year that students begin 9<sup style="font-size: 10px;">th</sup> grade.</li>
+                            <li><strong>9th Grade Cohort</strong> - 9<sup style="font-size: 10px;">th</sup> grade cohort. The year shown represents the year that students begin 9<sup style="font-size: 10px;">th</sup> grade.</li>
                             <li><strong>On-track</strong> - Defined as completion of 10 or more credits and passing one regents exam by the end of 9<sup style="font-size: 10px;">th</sup> grade.</li>
                             <li><strong>High School Graduation</strong> - Timing of high school graduation. On-time indicates that a student graduated within 4 years of enrolling; late indicates that a student did not. 
                                 High school graduation only includes students who graduated with a Regents or Local diploma. Students graduating with a GED or IEP diploma are counted as non-graduates.</li>
                             <li><strong>College Enrollment Level</strong> - Level of college at which students enrolled. Choices are limited to any, 2 year college, and 4 year college.</li>
                             <li><strong>Years Persisted</strong> - Number of years that a student successfully re-enrolled in college. The denominator for figures in this tab is students who enrolled in college, rather than the full cohort.</li>
                         </ul> 
+                    </p>
+                </div>
+                <div class="carousel-item tile">
+                    <h3><strong>Data Sources</strong></h3>
+                    <p class="basic_para">
+                        The data that power this dashboard are sourced from the NYCDOE, and the City University of New York (CUNY). 
+                        We are grateful to The Research Alliance for New York City Schools, which has access to this data and made it available to us. 
+                        We are also grateful to the Gates Foundation, whose generous funding has made this project possible.
                     </p>
                 </div>
                 <!-- Tableau Embed Goes Below -->
