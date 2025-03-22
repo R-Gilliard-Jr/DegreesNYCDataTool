@@ -91,3 +91,8 @@ div.tableau-container {
     margin: 0 auto;
     text-align: center;
 }
+
+a.carousel-control-next:hover,
+a.carousel-control-prev:hover {
+    background-color: black;
+}
