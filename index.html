@@ -1,138 +1,163 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="basic_container">
-            <div class= "tile">
-                <h3><strong>Introduction and Instructions</strong></h3>
-                <p class="basic_para"> 
-                    The graphs throughout this application are intended to display the paths students take
-                    to and through college, beginning in their freshman year of high school. A series of bar graphs is presented, that
-                    can be be updated to show students in different 9th grade cohorts,
-                    of different race/ethnicity, gender, from different Boroughs, and with different education
-                    statuses, among other characteristics. The following dropdown menus and sliders appear on one or more
-                    of the charts:
-                    <ul class="basic_list">
-                        <li>
-                            Student Characteristic: Charts can be explored within student characteristics. 
-                            Changing the value in this dropdown will change the rows that appear on the graph as well as 
-                            the selectable additional characteristics.
-                        </li>
-                        <li>
-                            Additional Characteristic: Where appropriate, users can drilldown by an additional characteristic.
-                        </li>
-                        <li>
-                            College Level: On the charts depicting college-level outcomes, users can select whether to
-                            examine outcomes for students who attended a four year or two year college, two year only, or four year only.
-                        </li>
-                        <li>
-                            Years Persisted: The persistence chart can be examined by number of years persisted: two or three.
-                        </li>
-                        <li>
-                            9th Grade Cohort: The data is examined within 9th grade cohorts. Years represent
-                            the year that students in that cohort began 9th grade.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="tile">
-                <h3><strong>Examining a Cohort</strong></h3>
-                <p class="basic_para">
-                    We mention it elsewhere, but it is important to keep in mind that all figures in the dashboard are within a 9th Grade Cohort.
-                    To take an example, consider the 2009 cohort. On the specialized high school chart, the cohort year and the outcome year align:
-                    enrollment in a specialized high school would have had to occur in 2009 for a student to be in the 2009 9th grade cohort. As we progress
-                    through the charts, however, the cohort year and the outcome year diverge. A student in the 2009 cohort would have been on-track in 9th
-                    grade in 2010, an on-time high school graduate in 2013, and an on-time college enrolle in 2013 as well. Nevertheless, the 9th Grade Cohort 
-                    slider will always show 2009. As a result, data for a cohort may not be available for all outcomes because the cohort itself may not have
-                    had time to reach that point in the high-school through college trajectory.
-                </p>
-            </div>
-            <div class= "tile">
-                <h3><strong>Dos and Don'ts with the Data</strong></h3>
-                <div class="basic_para">
-                    The chart(s) throughout this application present aggregated high school data for students who attended school
-                    in the New York City Department of Education (NYCDOE). The data can be broken up along many different dimensions: race/ethnicity, gender,
-                    English language learners, individualized education program status, and free/reduced price lunch eligibility. The best
-                    data is not without bias, and further bias is added as data is interpreted. Here are some dos and 
-                    dont's to consider as you explore the chart(s) on this page.
-                    <ul>
-                        <li><strong>Do:</strong> Remember that, though these groups are presented separately here, they are not independent in reality. 
-                            Students can have more than one of identity and the consequences of discrimination mean that students experiencing one 
-                            form of marginalization are likely to experience others.
-                        </li>
-                        <li>
-                            <strong>Don't:</strong> Neglect the the impact of discrimination on student outcomes. As differences emerge 
-                            in these charts, consider what barriers students in different groups are exposed to that prevent them 
-                            from reaching their full potential. Avoid overly simplistic conclusions about student ability.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class= "carousel-item tile">
-                <h3><strong>Definitions</strong></h3>
-                <p class="basic_para">
-                    <ul class="basic_list">
-                        <li><strong>Race</strong> - Student, self-selected race/ethnicity. Limited to the values of Asian, Black, Latinx, White, and Other.</li>
-                        <li><strong>Gender</strong> - Student, self-selected gender. Limited to the, binary, male and female.</li>
-                        <li><strong>English Language Learner</strong> - Students whose native language is not english and who have been identified as in need of additional support in learning English.</li>
-                        <li><strong>Individualized Education Program</strong> - Students with an individualized education program, developed by their school in partnership with the student and their guardian(s).</li>
-                        <li><strong>Free/Reduced Price Lunch</strong> - Students who are eligible for free/reduced price lunch.</li>
-                        <li><strong>Borough</strong> - The borough of New York City in which the student attended high school.</li>
-                        <li><strong>9th Grade Cohort</strong> - 9<sup style="font-size: 10px;">th</sup> grade cohort. The year shown represents the year that students begin 9<sup style="font-size: 10px;">th</sup> grade.</li>
-                        <li><strong>On-track</strong> - Defined as completion of 10 or more credits and passing one regents exam by the end of 9<sup style="font-size: 10px;">th</sup> grade.</li>
-                        <li><strong>High School Graduation</strong> - Timing of high school graduation. On-time indicates that a student graduated within 4 years of enrolling; late indicates that a student did not. 
-                            High school graduation only includes students who graduated with a Regents or Local diploma. Students graduating with a GED or IEP diploma are counted as non-graduates.</li>
-                        <li><strong>College Enrollment Level</strong> - Level of college at which students enrolled. Choices are limited to any, 2 year college, and 4 year college.</li>
-                        <li><strong>Years Persisted</strong> - Number of years that a student successfully re-enrolled in college. The denominator for figures in this tab is students who enrolled in college, rather than the full cohort.</li>
-                    </ul> 
-                </p>
-            </div>
-            <div class="carousel-item tile">
-                <h3><strong>Data Sources</strong></h3>
-                <p class="basic_para">
-                    The data that power this dashboard are sourced from the NYCDOE, and the City University of New York (CUNY). 
-                    We are grateful to The Research Alliance for New York City Schools, which has access to this data and made it available to us. 
-                    We are also grateful to the Gates Foundation, whose generous funding has made this project possible.
-                </p>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="basic_container">
+        <div class="tile">
+            <h3><strong>Introduction and Instructions</strong></h3>
+            <p class="basic_para">
+                The graphs throughout this application are intended to display the paths students take
+                to and through college, beginning in their freshman year of high school. A series of bar graphs is
+                presented, that
+                can be be updated to show students in different 9th grade cohorts,
+                of different race/ethnicity, gender, from different Boroughs, and with different education
+                statuses, among other characteristics. The following dropdown menus and sliders appear on one or more
+                of the charts:
+            <ul class="basic_list">
+                <li>
+                    Student Characteristic: Charts can be explored within student characteristics.
+                    Changing the value in this dropdown will change the rows that appear on the graph as well as
+                    the selectable additional characteristics.
+                </li>
+                <li>
+                    Additional Characteristic: Where appropriate, users can drilldown by an additional characteristic.
+                </li>
+                <li>
+                    College Level: On the charts depicting college-level outcomes, users can select whether to
+                    examine outcomes for students who attended a four year or two year college, two year only, or four
+                    year only.
+                </li>
+                <li>
+                    Years Persisted: The persistence chart can be examined by number of years persisted: two or three.
+                </li>
+                <li>
+                    9th Grade Cohort: The data is examined within 9th grade cohorts. Years represent
+                    the year that students in that cohort began 9th grade.
+                </li>
+            </ul>
+            </p>
+        </div>
+        <div class="tile">
+            <h3><strong>Examining a Cohort</strong></h3>
+            <p class="basic_para">
+                We mention it elsewhere, but it is important to keep in mind that all figures in the dashboard are
+                within a 9th Grade Cohort.
+                To take an example, consider the 2009 cohort. On the specialized high school chart, the cohort year and
+                the outcome year align:
+                enrollment in a specialized high school would have had to occur in 2009 for a student to be in the 2009
+                9th grade cohort. As we progress
+                through the charts, however, the cohort year and the outcome year diverge. A student in the 2009 cohort
+                would have been on-track in 9th
+                grade in 2010, an on-time high school graduate in 2013, and an on-time college enrolle in 2013 as well.
+                Nevertheless, the 9th Grade Cohort
+                slider will always show 2009. As a result, data for a cohort may not be available for all outcomes
+                because the cohort itself may not have
+                had time to reach that point in the high-school through college trajectory.
+            </p>
+        </div>
+        <div class="tile">
+            <h3><strong>Dos and Don'ts with the Data</strong></h3>
+            <div class="basic_para">
+                The chart(s) throughout this application present aggregated high school data for students who attended
+                school
+                in the New York City Department of Education (NYCDOE). The data can be broken up along many different
+                dimensions: race/ethnicity, gender,
+                English language learners, individualized education program status, and free/reduced price lunch
+                eligibility. The best
+                data is not without bias, and further bias is added as data is interpreted. Here are some dos and
+                dont's to consider as you explore the chart(s) on this page.
+                <ul>
+                    <li><strong>Do:</strong> Remember that, though these groups are presented separately here, they are
+                        not independent in reality.
+                        Students can have more than one of identity and the consequences of discrimination mean that
+                        students experiencing one
+                        form of marginalization are likely to experience others.
+                    </li>
+                    <li>
+                        <strong>Don't:</strong> Neglect the the impact of discrimination on student outcomes. As
+                        differences emerge
+                        in these charts, consider what barriers students in different groups are exposed to that prevent
+                        them
+                        from reaching their full potential. Avoid overly simplistic conclusions about student ability.
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- Tableau Embed Goes Below -->
-        <div class="tableau-container">
-            <div class='tableauPlaceholder' id='viz1742468865235' style='position: relative'>
-                <noscript>
-                    <a href='#'>
-                        <img alt='Comparing Periods ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;RollingDatePeriods&#47;ComparingPeriods&#47;1_rss.png' style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz'  style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                    <param name='embed_code_version' value='3' /> 
-                    <param name='site_root' value='' />
-                    <param name='name' value='RollingDatePeriods&#47;ComparingPeriods' />
-                    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;RollingDatePeriods&#47;ComparingPeriods&#47;1.png' /> 
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object>
-            </div>
+        <div class="tile">
+            <h3><strong>Definitions</strong></h3>
+            <p class="basic_para">
+            <ul class="basic_list">
+                <li><strong>Race</strong> - Student, self-selected race/ethnicity. Limited to the values of Asian,
+                    Black, Latinx, White, and Other.</li>
+                <li><strong>Gender</strong> - Student, self-selected gender. Limited to the, binary, male and female.
+                </li>
+                <li><strong>English Language Learner</strong> - Students whose native language is not english and who
+                    have been identified as in need of additional support in learning English.</li>
+                <li><strong>Individualized Education Program</strong> - Students with an individualized education
+                    program, developed by their school in partnership with the student and their guardian(s).</li>
+                <li><strong>Free/Reduced Price Lunch</strong> - Students who are eligible for free/reduced price lunch.
+                </li>
+                <li><strong>Borough</strong> - The borough of New York City in which the student attended high school.
+                </li>
+                <li><strong>9th Grade Cohort</strong> - 9<sup style="font-size: 10px;">th</sup> grade cohort. The year
+                    shown represents the year that students begin 9<sup style="font-size: 10px;">th</sup> grade.</li>
+                <li><strong>On-track</strong> - Defined as completion of 10 or more credits and passing one regents exam
+                    by the end of 9<sup style="font-size: 10px;">th</sup> grade.</li>
+                <li><strong>High School Graduation</strong> - Timing of high school graduation. On-time indicates that a
+                    student graduated within 4 years of enrolling; late indicates that a student did not.
+                    High school graduation only includes students who graduated with a Regents or Local diploma.
+                    Students graduating with a GED or IEP diploma are counted as non-graduates.</li>
+                <li><strong>College Enrollment Level</strong> - Level of college at which students enrolled. Choices are
+                    limited to any, 2 year college, and 4 year college.</li>
+                <li><strong>Years Persisted</strong> - Number of years that a student successfully re-enrolled in
+                    college. The denominator for figures in this tab is students who enrolled in college, rather than
+                    the full cohort.</li>
+            </ul>
+            </p>
         </div>
-        <div class="header" style="display: flex; justify-content: center; margin: 10px;">
-            <img src="https://static.wixstatic.com/media/b46d4c_032fb441999f43a29b9c601d25e2ff97~mv2.png/v1/fill/w_208,h_55,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%23DegreesNYC_RGB.png">
+        <div class="tile">
+            <h3><strong>Data Sources</strong></h3>
+            <p class="basic_para">
+                The data that power this dashboard are sourced from the NYCDOE, and the City University of New York
+                (CUNY).
+                We are grateful to The Research Alliance for New York City Schools, which has access to this data and
+                made it available to us.
+                We are also grateful to the Gates Foundation, whose generous funding has made this project possible.
+            </p>
         </div>
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1742468865235');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='900px';vizElement.style.height='627px';}
-            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='900px';vizElement.style.height='627px';}
-            else { vizElement.style.width='100%';vizElement.style.height='727px';}
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
-    </body>
+    </div>
+    <!-- Tableau Embed Goes Below -->
+    <div class="tableau-container">
+        <div class='tableauPlaceholder' id='viz1742832210043' style='position: relative'><noscript><a href='#'><img
+                        alt='Students&#39; Progression from High School to, and through, College '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;degrees_data_tool&#47;AcademicTrajectory&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='degrees_data_tool&#47;AcademicTrajectory' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;degrees_data_tool&#47;AcademicTrajectory&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1742832210043'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1300px'; vizElement.style.height = '1027px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+    <div class="header" style="display: flex; justify-content: center; margin: 10px;">
+        <img
+            src="https://static.wixstatic.com/media/b46d4c_032fb441999f43a29b9c601d25e2ff97~mv2.png/v1/fill/w_208,h_55,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%23DegreesNYC_RGB.png">
+    </div>
+</body>
+
 </html>

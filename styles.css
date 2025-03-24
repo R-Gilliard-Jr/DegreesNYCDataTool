@@ -87,7 +87,7 @@
 div.tableau-container {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     text-align: center;
 }
