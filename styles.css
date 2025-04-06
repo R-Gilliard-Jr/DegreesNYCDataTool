@@ -87,16 +87,7 @@
 div.tableau-container {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     text-align: center;
-}
-
-a.carousel-control-next:hover,
-a.carousel-control-prev:hover {
-    background-color: black;
-}
-
-.tile#tableau-card {
-    padding-left: 15%;
 }
